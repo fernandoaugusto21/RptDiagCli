@@ -1,0 +1,3 @@
+[submodule "code/external/majorsilence.crystal"]
+	path = code/external/majorsilence.crystal
+	url = https://github.com/majorsilence/majorsilence.crystal.git
