@@ -28,3 +28,9 @@ dotnet run --project code/RptDiagnosticCli -- --file /path/to/report.rpt --verbo
 ```
 
 Detalhes de build, testes e opções da CLI: [`code/README.md`](code/README.md).
+
+## Licença
+
+[MIT](LICENSE). Compatível com a licença tri-licenciada
+(MIT/Apache-2.0/BSD-3-Clause) do submódulo
+[`majorsilence.crystal`](code/external/majorsilence.crystal).
