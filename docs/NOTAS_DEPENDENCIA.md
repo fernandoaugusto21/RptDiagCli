@@ -18,10 +18,12 @@ Reports e expõe exatamente os projetos `Majorsilence.Crystal.Model` e
 Licença tri-licenciada (MIT/Apache-2.0/BSD-3-Clause).
 
 **Decisão**: como o pacote não está publicado no NuGet, o repositório foi
-clonado como dependência de código-fonte em
+adicionado como dependência de código-fonte em
 [`code/external/majorsilence.crystal`](../code/external/majorsilence.crystal)
-e referenciado via `ProjectReference` (não `PackageReference`) a partir de
-`RptDiagnosticCli.csproj`.
+— um **git submodule** apontando para o upstream, fixado no commit `44e4680`
+— e referenciado via `ProjectReference` (não `PackageReference`) a partir de
+`RptDiagnosticCli.csproj`. Ver [`../code/README.md`](../code/README.md#clonando-o-repositório)
+para instruções de clone/atualização do submódulo.
 
 ## Target Framework
 

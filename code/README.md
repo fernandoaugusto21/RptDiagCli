@@ -66,14 +66,31 @@ dotnet publish code/RptDiagnosticCli -c Release -r linux-x64 --self-contained
 Gera o executável em
 `code/RptDiagnosticCli/bin/Release/net10.0/linux-x64/publish/rpt-diagnostic`.
 
-## Atualizando a dependência do parser
+## Clonando o repositório
 
-`code/external/majorsilence.crystal` é um clone raso (`git clone --depth 1`)
-do repositório upstream, não um submódulo. Para atualizar:
+`code/external/majorsilence.crystal` é um **git submodule**. Ao clonar, inicialize-o também:
 
 ```bash
-rm -rf code/external/majorsilence.crystal
-git clone --depth 1 https://github.com/majorsilence/majorsilence.crystal.git code/external/majorsilence.crystal
+git clone --recurse-submodules https://github.com/fernandoaugusto21/RptDiagCli.git
+```
+
+Se já clonou sem `--recurse-submodules`:
+
+```bash
+git submodule update --init
+```
+
+## Atualizando a dependência do parser
+
+Para avançar o submódulo para outro commit do upstream:
+
+```bash
+cd code/external/majorsilence.crystal
+git fetch
+git checkout <commit-ou-branch>
+cd ../../..
+git add code/external/majorsilence.crystal
+git commit -m "Atualiza majorsilence.crystal para <commit>"
 ```
 
 ## Changelog
