@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/external/" />
+  <Folder Name="/external/majorsilence.crystal/" />
+  <Folder Name="/external/majorsilence.crystal/src/">
+    <Project Path="external/majorsilence.crystal/src/Majorsilence.Crystal.Model/Majorsilence.Crystal.Model.csproj" />
+    <Project Path="external/majorsilence.crystal/src/Majorsilence.Crystal.Parser/Majorsilence.Crystal.Parser.csproj" />
+  </Folder>
+  <Project Path="RptDiagnosticCli.Tests/RptDiagnosticCli.Tests.csproj" />
+  <Project Path="RptDiagnosticCli/RptDiagnosticCli.csproj" />
+</Solution>
