@@ -14,8 +14,6 @@ agêntico.
 
 - [`code/README.md`](code/README.md) — build, testes, uso da CLI, clone com
   submódulo e changelog.
-- [`docs/EspecificacaoAgentica.md`](docs/EspecificacaoAgentica.md) —
-  especificação completa (schema JSON, arquitetura).
 - [`docs/NOTAS_DEPENDENCIA.md`](docs/NOTAS_DEPENDENCIA.md) — desvios de
   implementação em relação à especificação.
 
