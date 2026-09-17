@@ -97,8 +97,7 @@ git commit -m "Atualiza majorsilence.crystal para <commit>"
 
 ### 2026-08-20 — Travessia de subrelatórios
 
-**Problema**: rodar o CLI contra um `.rpt` real (`Historico_Escolar_Superior.rpt`,
-SGSET) mostrou que todo campo/fórmula/seção definido dentro de um
+**Problema**: rodar o CLI contra um `.rpt` real mostrou que todo campo/fórmula/seção definido dentro de um
 `SubreportObject.Report` ficava invisível no JSON de saída — `DataSourceAnalyzer`,
 `FormulaAnalyzer` e `StructureAnalyzer` só liam as listas do relatório principal
 (`report.Fields`, `report.Sections`), nunca as do subrelatório propriamente. Como
@@ -137,7 +136,7 @@ justamente a parte mais provável de conter a lógica condicional a diagnosticar
 - 6 novos testes em `RptDiagnosticCli.Tests` cobrendo subreport walking,
   `suppress_formula` e `selection_formulas` (suíte total: 15/15).
 
-**Validação**: contra o `.rpt` do SGSET, o total de campos de banco expostos
+**Validação**: contra o `.rpt`, o total de campos de banco expostos
 subiu de 67 (só relatório principal) para 91 em 6 nós (principal + 5
 subrelatórios), e fórmulas de 15 para 36 — incluindo as fórmulas do subrelatório
 que decidem `RESULTADO = 18 → 'AE'` (Aproveitamento de Estudos), relevantes ao
