@@ -48,8 +48,7 @@ partir das referências `{Table.Column}` embutidas em objetos e fórmulas.
 
 ## Detecção de campos órfãos (`FIELD_ORPHAN`) — subrelatórios e fórmulas
 
-Validado contra um relatório real de produção (SESI-SP,
-`Historico_Escolar_Superior.rpt`, 3.5 MB), a primeira versão do
+Validado contra um relatório real de produção, a primeira versão do
 `DataSourceAnalyzer` marcava 64 de 67 campos de banco como `ORPHAN` porque só
 contava uso via `FieldObject` posicionado diretamente nas seções do
 relatório principal — ignorando (a) campos usados apenas dentro de
